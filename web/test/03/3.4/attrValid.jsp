@@ -29,6 +29,20 @@
   </datalist>
   <br>
   <input type="submit" value="提交">
+  <input type="button" value="手动验证" onclick="check()">
 </form>
 </body>
 </html>
+
+
+<script>
+  var check = function(){
+    //name
+    var name = document.getElementById('name');
+    if (!name.checkValidity()) {
+      console.info('false');
+      name.setCustomValidity("名称是必填的");
+    }
+
+  };
+</script>
