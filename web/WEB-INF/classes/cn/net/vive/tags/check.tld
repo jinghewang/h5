@@ -1,0 +1,22 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+
+    <description>JSTL 1.1 core library</description>
+    <display-name>JSTL core</display-name>
+    <tlib-version>1.1</tlib-version>
+    <short-name>qsfun</short-name>
+    <uri>http://www.qingsoft.net/el/function</uri>
+
+    <function>
+        <description>check username</description>
+        <name>check</name>
+        <function-class>cn.net.vive.el.function.CheckUsername</function-class>
+        <function-signature>boolean check(cn.net.vive.pojo.Userinfo)</function-signature>
+    </function>
+
+</taglib>
